@@ -1,0 +1,24 @@
+{
+  "name": "Emonomy test task",
+  "version": "0.0.1",
+  "description": "Emonomy test task",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "css": [],
+      "js": [
+        "js/content.js",
+        "jquery-3.6.3.min.js"
+      ],
+      "matches": [
+        "*://*.facebook.com/*"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
